@@ -112,17 +112,10 @@ h1 em,h2 em { color:var(--red); font-weight:700; }
 .hours { border-top:1px solid #333; margin-bottom:35px; }
 .hours div { display:flex; justify-content:space-between; gap:20px; padding:15px 0; border-bottom:1px solid #333; text-transform:uppercase; font-size:11px; }
 .hours strong { color:var(--yellow); }
-.map-art { position:relative; overflow:hidden; min-height:580px; background:#dedbd3; color:var(--black); }
-.map-grid { position:absolute; inset:-10%; transform:rotate(-8deg); }
-.map-grid:before,.map-grid:after,.map-grid i { content:""; position:absolute; background:#f7f5ef; border:1px solid #c9c8c3; }
-.map-grid:before{width:130%;height:50px;top:22%;left:-10%}.map-grid:after{height:130%;width:62px;left:38%;top:-10%}.map-grid i:nth-child(1){width:140%;height:45px;top:60%;left:-10%}.map-grid i:nth-child(2){height:140%;width:44px;left:70%;top:-10%}.map-grid i:nth-child(3){height:140%;width:28px;left:13%;top:-10%}.map-grid i:nth-child(4){width:140%;height:26px;top:80%;left:-10%}.map-grid i:nth-child(5){width:90px;height:90px;border-radius:50%;top:12%;right:15%}
-.map-pin { position:absolute; left:49%; top:42%; display:flex; align-items:center; gap:16px; font-weight:800; font-size:13px; }
-.map-pin>b { display:grid; place-items:center; width:58px; height:58px; border-radius:50% 50% 50% 8px; transform:rotate(-45deg); background:var(--red); color:white; font-family:"Manual",sans-serif; font-size:34px; box-shadow:0 12px 30px #0004; }
-.map-pin>b::first-letter { transform:rotate(45deg); }
-.map-pin span { background:white; padding:12px 18px; box-shadow:0 7px 20px #0002; }
-.map-pin small { display:block; color:#777; margin-top:4px; }
-.map-art>p { position:absolute; left:8%; bottom:8%; margin:0; text-transform:uppercase; font-size:11px; letter-spacing:.12em; }
-.map-art>p strong { font-size:17px; }
+.map-art { position:relative; overflow:hidden; min-height:580px; background:url('/brand/podium-map.png') center center/cover no-repeat; color:white; }
+.map-art:after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(0,4,5,.72),transparent 32%); pointer-events:none; }
+.map-art>p { position:absolute; z-index:1; left:8%; bottom:8%; margin:0; text-transform:uppercase; font-size:11px; letter-spacing:.12em; text-shadow:0 2px 10px #000; }
+.map-art>p strong { font-size:17px; color:var(--yellow); }
 
 .final-cta { display:grid; grid-template-columns:1fr .55fr; gap:10vw; align-items:end; padding:110px 7vw; background:var(--red); }
 .final-cta h2 em { color:var(--yellow); }

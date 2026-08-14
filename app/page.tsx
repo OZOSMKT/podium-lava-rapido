@@ -176,8 +176,6 @@ export default function Home() {
           <a className="button" href="https://maps.app.goo.gl/ZcDM6mr1ngo56j8u8" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
         </div>
         <div className="map-art" aria-label="Referência de localização da Podium Lava Rápido em Aparecida de Goiânia">
-          <div className="map-grid" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-          <div className="map-pin"><b>P</b><span>Podium Lava Rápido<small>Unidade Aparecida</small></span></div>
           <p>Em frente ao<br /><strong>Tatico Papillon</strong></p>
         </div>
       </section>
