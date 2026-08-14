@@ -106,15 +106,6 @@ h1 em,h2 em { color:var(--red); font-weight:700; }
 .step-list p { color:#666869; line-height:1.6; font-size:13px; margin:0; }
 .availability { font-size:10px; color:#777; line-height:1.5; }
 
-.real-podium-section { display:grid; grid-template-columns:.72fr 1.15fr .58fr; min-height:760px; background:#0a0c0d; }
-.real-photo { min-height:100%; background-size:cover; background-repeat:no-repeat; }
-.wash-photo { background-image:linear-gradient(0deg,rgba(0,4,5,.5),transparent 45%),url('/brand/podium-wash.jpg'); background-position:52% center; }
-.interior-photo { background-image:linear-gradient(0deg,rgba(0,4,5,.45),transparent 45%),url('/brand/podium-interior.jpg'); background-position:center; }
-.real-podium-copy { padding:100px 5vw 70px; align-self:center; }
-.real-podium-copy h2 { font-size:clamp(50px,5.2vw,78px); }
-.real-podium-copy>p:not(.section-kicker) { color:#9b9d9e; line-height:1.75; font-size:14px; max-width:580px; margin:28px 0 38px; }
-.team-photo { width:100%; min-height:255px; background:url('/brand/podium-team.jpg') center center/cover no-repeat; border:1px solid #303233; }
-
 .local-section { min-height:650px; display:grid; grid-template-columns:.82fr 1.18fr; background:#0e1011; }
 .local-card { padding:105px 7vw; }
 .local-card>p:not(.section-kicker) { color:#9a9b9c; line-height:1.7; max-width:460px; margin:28px 0 38px; font-size:14px; }
@@ -179,12 +170,6 @@ footer small { grid-column:1/-1; padding-top:22px; border-top:1px solid #2b2c2d;
   .table-access-card h3 { font-size:38px; }
   .price-note { text-align:left; line-height:1.5; }
   .pickup-section { gap:55px; }
-  .real-podium-section { grid-template-columns:1fr; }
-  .real-photo { min-height:390px; }
-  .real-podium-copy { padding:70px 22px; }
-  .real-podium-copy h2 { font-size:47px; }
-  .team-photo { min-height:210px; }
-  .interior-photo { display:none; }
   .route-line { margin-top:40px; }
   .local-section { grid-template-columns:1fr; }
   .map-art { min-height:430px; }
