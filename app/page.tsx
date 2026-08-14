@@ -17,6 +17,15 @@ const steps = [
   ["03", "Você recebe", "Seu carro volta limpo, cuidado e pronto para a rotina."],
 ];
 
+const serviceCategories = [
+  ["Ducha na máquina", "A partir de R$ 15", "Lavagem externa prática para o dia a dia."],
+  ["Combos rápidos", "A partir de R$ 35", "Lavagem, secagem e pretinho; opções com cuidado interno."],
+  ["Pré-lavagem", "A partir de R$ 25", "Limpeza manual de longarinas e rodas antes da máquina."],
+  ["Geral completa", "A partir de R$ 60", "Exterior, interior, cera, aspiração e acabamento completo."],
+  ["Higienização", "A partir de R$ 200", "Opções para teto, bancos de tecido ou couro."],
+  ["Serviços adicionais", "A partir de R$ 8", "Tapetes, aspiração, pretinho, aromas, cera e outros."],
+];
+
 export default function Home() {
   return (
     <main>
@@ -90,8 +99,8 @@ export default function Home() {
           <p className="section-kicker light">Lavagem completa</p>
           <h2>O cuidado que<br /><em>seu carro merece.</em></h2>
           <p>Do lado de fora aos detalhes que você toca todos os dias. Um serviço completo, sem complicação.</p>
-          <div className="service-price"><span>Lavagem geral</span><strong>A partir de R$ 60,00</strong></div>
-          <div className="service-price"><span>Ducha</span><strong>A partir de R$ 15,00</strong></div>
+          <div className="service-price"><span>Lavagem geral completa</span><strong>Promoção a partir de R$ 60,00</strong></div>
+          <div className="service-price"><span>Ducha na máquina</span><strong>Promoção a partir de R$ 15,00</strong></div>
         </div>
         <div className="service-list">
           {services.map(([number, name]) => (
@@ -101,6 +110,41 @@ export default function Home() {
           ))}
           <a className="button button-full" href={whatsappUrl} target="_blank" rel="noreferrer">Quero agendar minha lavagem <span>↗</span></a>
         </div>
+      </section>
+
+      <section className="price-guide-section" id="tabela">
+        <div className="price-guide-heading">
+          <div>
+            <p className="section-kicker">Escolha seu cuidado</p>
+            <h2>Tem um serviço<br /><em>para cada rotina.</em></h2>
+          </div>
+          <p>
+            O valor varia conforme o porte do veículo e o nível de cuidado escolhido.
+            Veja um resumo abaixo ou abra a tabela completa para consultar todas as opções.
+          </p>
+        </div>
+        <div className="category-grid">
+          {serviceCategories.map(([title, price, text], index) => (
+            <article key={title}>
+              <span>0{index + 1}</span>
+              <h3>{title}</h3>
+              <strong>{price}</strong>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+        <div className="table-access-card">
+          <div className="table-preview" aria-hidden="true" />
+          <div>
+            <p className="section-kicker light">Tabela Podium 2026</p>
+            <h3>Consulte todos os serviços e valores.</h3>
+            <p>A tabela reúne preços por porte de veículo, combos, higienizações e adicionais. Os valores destacados em amarelo são promocionais.</p>
+            <a className="button button-yellow" href="/brand/tabela-podium-2026.jpg" target="_blank" rel="noreferrer">
+              Abrir tabela completa <span>↗</span>
+            </a>
+          </div>
+        </div>
+        <p className="price-note">Valores promocionais informados na tabela vigente de 2026. Confirme disponibilidade e condições no agendamento.</p>
       </section>
 
       <section className="pickup-section" id="como-funciona">
