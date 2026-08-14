@@ -52,8 +52,11 @@ export default function Home() {
           <p className="microcopy">Busca e entrega mediante agendamento e disponibilidade.</p>
         </div>
 
-        <div className="hero-visual" aria-label="Detalhe de um carro recebendo cuidado profissional">
-          <div className="visual-photo" />
+        <div className="hero-visual" aria-label="Identidade visual Podium Lava Rápido">
+          <div className="brand-stage">
+            <img src="/brand/logo-dark.png" alt="" />
+            <p>Lavagem automotiva <span>•</span> Aparecida de Goiânia</p>
+          </div>
           <div className="speed-lines" aria-hidden="true"><i /><i /><i /></div>
           <div className="price-chip">
             <span>A partir de</span>
