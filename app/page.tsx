@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className="hero-visual" aria-label="Identidade visual Podium Lava Rápido">
           <div className="brand-stage">
-            <img src="/brand/logo-dark.png" alt="" />
+            <div className="hero-photo" />
             <p>Lavagem automotiva <span>•</span> Aparecida de Goiânia</p>
           </div>
           <div className="speed-lines" aria-hidden="true"><i /><i /><i /></div>

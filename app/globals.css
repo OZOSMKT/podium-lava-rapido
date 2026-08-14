@@ -36,10 +36,9 @@ h1 em,h2 em { color:var(--red); font-weight:700; }
 .text-link span { color:var(--yellow); margin-left:10px; }
 .microcopy { font-size:10px; color:#747677; margin:13px 0 0; }
 .hero-visual { position:relative; align-self:stretch; z-index:1; min-height:520px; }
-.brand-stage { position:absolute; inset:4% 0 2% 2%; overflow:hidden; background:linear-gradient(145deg,#17191a,#060809 72%); border:1px solid #292b2c; clip-path:polygon(12% 0,100% 0,100% 84%,80% 100%,0 100%,0 13%); }
-.brand-stage:before { content:"PODIUM"; position:absolute; right:-3%; bottom:-12%; color:rgba(235,235,235,.035); font-family:"Manual",sans-serif; font-style:italic; font-size:240px; line-height:1; }
-.brand-stage:after { content:""; position:absolute; inset:0; background:linear-gradient(125deg,transparent 48%,rgba(183,12,9,.15)); }
-.brand-stage img { position:absolute; z-index:1; width:174%; max-width:none; height:67%; object-fit:contain; object-position:left center; left:-10%; top:9%; }
+.brand-stage { position:absolute; inset:4% 0 2% 2%; overflow:hidden; background:#080a0b; border:1px solid #292b2c; clip-path:polygon(12% 0,100% 0,100% 84%,80% 100%,0 100%,0 13%); }
+.brand-stage:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,4,5,.35),transparent 42%),linear-gradient(0deg,rgba(0,4,5,.93),transparent 42%),linear-gradient(125deg,transparent 50%,rgba(183,12,9,.14)); }
+.hero-photo { position:absolute; inset:0; background:url('/brand/hero-car.jpg') center center/cover no-repeat; filter:saturate(.7) contrast(1.1) brightness(.82); transform:scale(1.015); }
 .brand-stage p { position:absolute; z-index:2; left:9%; right:9%; bottom:10%; margin:0; padding-top:16px; border-top:1px solid #454748; color:#b8babb; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.16em; }
 .brand-stage p span { color:var(--red); margin:0 8px; }
 .speed-lines { position:absolute; top:8%; right:-8vw; display:grid; gap:10px; transform:skewX(-35deg); }
@@ -131,7 +130,7 @@ footer small { grid-column:1/-1; padding-top:22px; border-top:1px solid #2b2c2d;
   .text-link { align-self:flex-start; }
   .hero-visual { min-height:410px; margin:8px -22px 0; }
   .brand-stage { clip-path:polygon(6% 0,100% 0,100% 88%,88% 100%,0 100%,0 8%); inset:0; }
-  .brand-stage img { width:205%; height:64%; left:-13%; top:8%; }
+  .hero-photo { background-position:57% center; }
   .price-chip { right:25px; bottom:35px; }
   .hero-proof { margin-top:22px; padding-top:20px; gap:10px; }
   .hero-proof div { display:block; text-align:center; }
