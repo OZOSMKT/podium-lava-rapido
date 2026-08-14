@@ -164,6 +164,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="real-podium-section">
+        <div className="real-photo wash-photo" role="img" aria-label="Profissional da Podium lavando um veículo" />
+        <div className="real-podium-copy">
+          <p className="section-kicker light">Gente de verdade, cuidado de perto</p>
+          <h2>Quem cuida do seu carro<br /><em>tem nome e experiência.</em></h2>
+          <p>
+            A Podium é uma empresa local, feita por uma equipe que entende a rotina da região
+            e trata cada veículo com atenção — por dentro e por fora.
+          </p>
+          <div className="team-photo" role="img" aria-label="Equipe da Podium Lava Rápido" />
+        </div>
+        <div className="real-photo interior-photo" role="img" aria-label="Limpeza interna de um veículo na Podium" />
+      </section>
+
       <section className="local-section" id="localizacao">
         <div className="local-card">
           <p className="section-kicker light">Perto de você</p>
