@@ -187,7 +187,7 @@ export default function Home() {
             <div><span>Segunda a sábado</span><strong>08h às 18h</strong></div>
             <div><span>Domingo</span><strong>08h às 13h</strong></div>
           </div>
-          <a className="button" href="https://www.google.com/maps/search/?api=1&query=Podium+Lava+R%C3%A1pido+Aparecida+de+Goi%C3%A2nia" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
+          <a className="button" href="https://maps.app.goo.gl/ZcDM6mr1ngo56j8u8" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
         </div>
         <div className="map-art" aria-label="Referência de localização da Podium Lava Rápido em Aparecida de Goiânia">
           <div className="map-grid" aria-hidden="true"><i /><i /><i /><i /><i /></div>
