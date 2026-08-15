@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import "tailwindcss";
+@import "tailwindcss" layer(theme);
 
 @font-face { font-family:"Manual"; src:url('/brand/manual-compressed-bold.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
 
